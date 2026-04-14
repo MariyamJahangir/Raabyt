@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode } from "react";
+import { type ReactNode, type JSX } from "react";
 import { useParallax, type UseParallaxOptions } from "@/hooks/use-parallax";
 import { cn } from "@/lib/utils";
 

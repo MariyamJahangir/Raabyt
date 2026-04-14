@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Flex } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { ScrollToTop } from "@/components/layout/scroll-to-top";
@@ -13,13 +13,6 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
-});
-
-const robotoFlex = Roboto_Flex({
-  variable: "--font-roboto-flex",
-  subsets: ["latin"],
-  display: "swap",
-  axes: ["wdth", "opsz"],
 });
 
 export const metadata: Metadata = {
@@ -94,7 +87,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${robotoFlex.variable} h-full dark`}>
+    <html lang="en" className={`${inter.variable} h-full dark`}>
       <body className="min-h-full flex flex-col antialiased bg-background text-foreground overflow-x-hidden">
         <OrganizationSchema />
 

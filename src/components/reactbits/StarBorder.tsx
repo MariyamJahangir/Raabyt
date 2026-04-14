@@ -2,18 +2,23 @@
 
 import React from "react";
 
-type StarBorderProps<T extends React.ElementType> =
-  React.ComponentPropsWithoutRef<T> & {
-    as?: T;
-    className?: string;
-    children?: React.ReactNode;
-    color?: string;
-    speed?: React.CSSProperties["animationDuration"];
-    thickness?: number;
-    innerClassName?: string;
+type StarBorderOwnProps = {
+  as?: React.ElementType;
+  className?: string;
+  children?: React.ReactNode;
+  color?: string;
+  speed?: React.CSSProperties["animationDuration"];
+  thickness?: number;
+  innerClassName?: string;
+};
+
+type StarBorderProps = StarBorderOwnProps &
+  Omit<React.HTMLAttributes<HTMLElement>, keyof StarBorderOwnProps> & {
+    // allow any extra props passed to the underlying element (href, type, etc.)
+    [key: string]: unknown;
   };
 
-const StarBorder = <T extends React.ElementType = "button">({
+const StarBorder = ({
   as,
   className = "",
   color = "white",
@@ -21,17 +26,19 @@ const StarBorder = <T extends React.ElementType = "button">({
   thickness = 1,
   innerClassName = "",
   children,
+  style,
   ...rest
-}: StarBorderProps<T>) => {
-  const Component = as || "button";
+}: StarBorderProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const Component: any = as || "button";
 
   return (
     <Component
       className={`relative inline-block overflow-hidden rounded-full ${className}`}
-      {...(rest as React.ComponentPropsWithoutRef<T>)}
+      {...rest}
       style={{
         padding: `${thickness}px 0`,
-        ...(rest as { style?: React.CSSProperties }).style,
+        ...(style as React.CSSProperties | undefined),
       }}
     >
       <div
