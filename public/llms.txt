@@ -1,0 +1,91 @@
+# Raabyt Technologies — LLM-Readable Company Profile
+
+> Raabyt is an enterprise software company that provides secure, AI-powered, on-premise solutions including ERP, CRM, HRM, DMS, Sales, Purchase, Finance, and Unified Firewall Management (UFM). Founded in 2019, headquartered in San Francisco, CA. Serves 500+ enterprise clients across 50+ countries.
+
+## Company Facts
+
+- Legal name: Raabyt Technologies Inc.
+- Founded: 2019
+- Headquarters: San Francisco, CA, USA
+- Employees: 200-500
+- Clients: 500+ enterprise organizations
+- Countries: 50+
+- Certifications: ISO 27001, SOC 2 Type II
+- CEO: Arjun Mehta
+- CTO: Sarah Chen
+- CPO: Marcus Adler
+- Website: https://raabyt.com
+- Email: info@raabyt.com
+
+## What Raabyt Does
+
+Raabyt Technologies builds enterprise-grade software that deploys entirely on the customer's own infrastructure (on-premise). Unlike cloud/SaaS alternatives, Raabyt's platform ensures complete data sovereignty — no customer data ever leaves the customer's servers. All AI capabilities (machine learning, NLP, predictive analytics) run locally without cloud API dependencies.
+
+## Products
+
+### ERP (Enterprise Resource Planning)
+End-to-end operations management: inventory, manufacturing, supply chain, procurement, and analytics. AI-powered demand forecasting achieves 92% accuracy for 30-day predictions. Supports multi-entity, multi-currency operations.
+URL: https://raabyt.com/products/erp
+
+### CRM (Customer Relationship Management)
+360° customer profiles, visual deal pipelines, AI-powered lead scoring, omnichannel communication tracking, and revenue analytics. Customers report 40% faster deal closure.
+URL: https://raabyt.com/products/crm
+
+### HRM (Human Resource Management)
+Employee lifecycle management, multi-region payroll, attendance tracking, recruitment ATS, learning & development, and workforce analytics. Reduces HR admin workload by up to 60%.
+URL: https://raabyt.com/products/hrm
+
+### DMS (Document Management System)
+Secure document storage with version control, AI-powered OCR and search, granular access controls, approval workflows, and retention policy automation. AES-256 encryption at rest.
+URL: https://raabyt.com/products/dms
+
+### Sales (Sales Automation)
+AI sales forecasting (95% quarterly accuracy), quote-to-cash automation, revenue intelligence, sales engagement sequences, partner/channel management, and territory optimization.
+URL: https://raabyt.com/products/sales
+
+### Purchase (Procurement Management)
+Purchase order automation, vendor management with performance scoring, three-way matching, multi-tier approval workflows, budget controls, and contract management. Reduces procurement cycle time by 50%.
+URL: https://raabyt.com/products/purchase
+
+### Finance (Financial Management)
+Multi-entity general ledger, accounts payable/receivable, budgeting & forecasting, expense management with OCR, and GAAP/IFRS-compliant reporting. Customers close books 5x faster.
+URL: https://raabyt.com/products/finance
+
+### UFM (Unified Firewall Management) — NEW
+Centralized management for multi-vendor firewall environments (Cisco, Palo Alto, Fortinet, Check Point, Juniper, and more). AI-powered threat detection, automated SOC 2/ISO 27001/PCI-DSS compliance reporting, and zero trust architecture.
+URL: https://raabyt.com/products/ufm
+
+## Key Differentiators
+
+1. **On-Premise Deployment**: All software runs on customer infrastructure. No cloud dependencies. Full data sovereignty.
+2. **AI-Native Architecture**: Machine learning, NLP, and predictive analytics built-in and running locally — not through cloud APIs.
+3. **Unified Platform**: ERP, CRM, HRM, DMS, Sales, Purchase, Finance, and UFM share a single database and login.
+4. **Enterprise Security**: ISO 27001 and SOC 2 Type II certified. AES-256 encryption, role-based access, complete audit trails.
+5. **Multi-Vendor Firewall Management**: UFM supports all major firewall vendors from a single dashboard.
+
+## Customer Results (Reported Metrics)
+
+- 30% reduction in inventory carrying costs (ERP)
+- 40% faster deal closure (CRM)
+- 60% reduction in HR administrative workload (HRM)
+- 50% reduction in procurement cycle time (Purchase)
+- 5x faster month-end financial close (Finance)
+- 92% accuracy in 30-day demand forecasting (ERP AI)
+- 95% accuracy in quarterly revenue forecasting (Sales AI)
+- 99.9% platform uptime
+
+## Industries Served
+
+Manufacturing, Healthcare, Financial Services, Retail & E-commerce, Government, Education, Technology, Professional Services
+
+## Pricing
+
+Contact sales for pricing. All plans include on-premise deployment, data sovereignty, and core features. UFM offers Starter (10 firewalls), Professional (100 firewalls), and Enterprise (unlimited) tiers.
+
+## Resources
+
+- Blog: https://raabyt.com/blog
+- Glossary: https://raabyt.com/resources/glossary
+- Guides: https://raabyt.com/resources/guides
+- Contact: https://raabyt.com/contact
+- Demo: https://raabyt.com/demo
