@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { ScrollToTop } from "@/components/layout/scroll-to-top";
+import { ScrollRestoration } from "@/components/layout/scroll-restoration";
 import { SmoothScroll } from "@/components/layout/smooth-scroll";
 import { CursorGlow } from "@/components/layout/cursor-glow";
 import { OrganizationSchema } from "@/components/seo/json-ld";
@@ -107,6 +108,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ScrollRestoration />
         <ScrollToTop />
         <SmoothScroll />
         <CursorGlow />

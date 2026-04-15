@@ -55,6 +55,8 @@ export function ChallengeSection() {
               enableBlur
               baseRotation={3}
               blurStrength={4}
+              wordAnimationEnd="bottom center"
+              rotationEnd="bottom center"
             >
               You&apos;ve Built Something Remarkable. Don&apos;t Let a Data Breach Define It.
             </ScrollReveal>
@@ -66,6 +68,8 @@ export function ChallengeSection() {
               enableBlur
               baseRotation={3}
               blurStrength={4}
+              wordAnimationEnd="bottom center"
+              rotationEnd="bottom center"
             >
               {"Every enterprise carries the same quiet fear: one breach, one compliance failure, one moment of lost control — and years of work become tomorrow's crisis. The cloud promised simplicity. What it quietly delivered was dependency — and exposure you never signed up for."}
             </ScrollReveal>
