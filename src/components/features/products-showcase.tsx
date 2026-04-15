@@ -108,13 +108,13 @@ function GlowCard({ product }: { product: ProductItem }) {
 
 export function ProductsShowcase() {
   const ref = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const glowRef = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.2 });
+  const inView = useInView(headingRef, { once: true, amount: 0.2 });
   const reduced = useReducedMotion();
 
-  // Parallax: heading floats up slightly, cards area moves differently
-  const headingParallax = useParallax<HTMLDivElement>({ speed: -0.06 });
+  // Parallax: cards area floats as user scrolls
   const cardsParallax = useParallax<HTMLDivElement>({ speed: -0.03 });
 
   useEffect(() => {
@@ -155,7 +155,7 @@ export function ProductsShowcase() {
 
       <div ref={ref} className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ─── Heading ─── */}
-        <div ref={headingParallax} className="text-center mb-10 md:mb-14">
+        <div ref={headingRef} className="text-center mb-10 md:mb-14">
           <motion.div
             className="inline-flex flex-col items-center mb-2"
             initial={reduced ? undefined : { opacity: 0 }}
