@@ -18,7 +18,7 @@ export function ChallengeSection() {
 
   const glowParallax = useParallax<HTMLDivElement>({ speed: 0.15 });
   const textParallax = useParallax<HTMLDivElement>({ speed: -0.08 });
-  const imageParallax = useParallax<HTMLDivElement>({ speed: -0.15, scale: 0.12 });
+  const imageParallax = useParallax<HTMLDivElement>({ speed: -0.15, scale: -0.52 });
 
   return (
     <section className="relative py-14 px-10 md:py-18 overflow-hidden">

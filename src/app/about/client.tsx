@@ -114,8 +114,10 @@ function AboutHero() {
 const TIMELINE = [
   { year: "2024", title: "Founded", description: "Raabyt Technologies incorporated with a mission to bring AI-powered enterprise software on-premise." },
   { year: "2025", title: "First Product", description: "Launched Raabyt ERP — the first AI-native, fully on-premise enterprise resource planning platform." },
-  { year: "2025", title: "Suite Expansion", description: "Released CRM, HRM, and DMS modules. Crossed 100 enterprise customers across 12 countries." },
-  { year: "2026", title: "Security Focus", description: "Launched Sales, Purchase, and Finance modules. Achieved ISO 27001 and SOC 2 Type II certification." },
+  { year: "2025", title: "Suite Expansion", description: "Released CRM, HRM, and DMS modules. "
+    // Crossed 100 enterprise customers across 12 countries." 
+    },
+  // { year: "2026", title: "Security Focus", description: "Launched Sales, Purchase, and Finance modules. Achieved ISO 27001 and SOC 2 Type II certification." },
   { year: "2026", title: "UFM Launch", description: "Introduced Unified Firewall Management — expanding into cybersecurity. Surpassed 350 enterprise clients." },
   // { year: "2024", title: "Global Scale", description: "Opened offices in 4 new regions. 500+ enterprise clients across 50+ countries. Launched AI Copilot features." },
 ];
@@ -390,10 +392,12 @@ function TeamSection() {
    ═══════════════════════════════════════ */
 
 const REGIONS = [
-  { region: "North America", locations: ["San Francisco, CA", "New York, NY", "Toronto, Canada"], icon: MapPin },
-  { region: "Europe", locations: ["London, UK", "Berlin, Germany", "Amsterdam, Netherlands"], icon: MapPin },
-  { region: "Asia Pacific", locations: ["Singapore", "Bangalore, India", "Sydney, Australia"], icon: MapPin },
-  { region: "Middle East & Africa", locations: ["Dubai, UAE", "Nairobi, Kenya"], icon: MapPin },
+  // { region: "North America", locations: ["San Francisco, CA", "New York, NY", "Toronto, Canada"], icon: MapPin },
+  // { region: "Europe", locations: ["London, UK", "Berlin, Germany", "Amsterdam, Netherlands"], icon: MapPin },
+  // { region: "Asia Pacific", locations: ["Singapore", "Bangalore, India", "Sydney, Australia"], icon: MapPin },
+  { region: "Asia Pacific", locations: [" India",], icon: MapPin },
+  // { region: "Middle East & Africa", locations: ["Dubai, UAE", "Nairobi, Kenya"], icon: MapPin },
+    { region: "Middle East", locations: ["Dubai, United Arab Emirates"], icon: MapPin },
 ];
 
 function GlobalPresence() {
@@ -437,9 +441,13 @@ function GlobalPresence() {
           </motion.div>
 
           {/* Regions grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="flex flex-wrap justify-center gap-5">
             {REGIONS.map((region) => (
-              <motion.div key={region.region} variants={fadeUp}>
+              <motion.div
+                key={region.region}
+                variants={fadeUp}
+                className="w-full sm:w-[calc(50%-0.625rem)] lg:w-[calc(25%-0.9375rem)]"
+              >
                 <div
                   className={cn(
                     "h-full rounded-xl p-6",
@@ -582,7 +590,7 @@ export function AboutPageClient() {
       <Divider />
       {/* <TeamSection /> */}
       <GlobalPresence />
-      <CareersCTA />
+      {/* <CareersCTA /> */}
     </>
   );
 }

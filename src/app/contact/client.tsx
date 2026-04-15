@@ -42,6 +42,22 @@ function LinkedInIcon({ className }: { className?: string }) {
   );
 }
 
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.517 2.567 5.784 2.295 7.15 2.233 8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.15 0-3.523.012-4.768.068-1.04.048-1.6.218-1.974.363-.497.193-.851.423-1.223.795-.372.372-.602.726-.795 1.223-.145.374-.315.934-.363 1.974-.056 1.245-.068 1.618-.068 4.768s.012 3.523.068 4.768c.048 1.04.218 1.6.363 1.974.193.497.423.851.795 1.223.372.372.726.602 1.223.795.374.145.934.315 1.974.363 1.245.056 1.618.068 4.768.068s3.523-.012 4.768-.068c1.04-.048 1.6-.218 1.974-.363.497-.193.851-.423 1.223-.795.372-.372.602-.726.795-1.223.145-.374.315-.934.363-1.974.056-1.245.068-1.618.068-4.768s-.012-3.523-.068-4.768c-.048-1.04-.218-1.6-.363-1.974a3.29 3.29 0 00-.795-1.223 3.29 3.29 0 00-1.223-.795c-.374-.145-.934-.315-1.974-.363-1.245-.056-1.618-.068-4.768-.068zm0 3.131a4.869 4.869 0 110 9.738 4.869 4.869 0 010-9.738zm0 8.03a3.162 3.162 0 100-6.324 3.162 3.162 0 000 6.324zm6.202-8.224a1.137 1.137 0 11-2.273 0 1.137 1.137 0 012.273 0z" />
+    </svg>
+  );
+}
+
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
+    </svg>
+  );
+}
+
 function XIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -317,7 +333,7 @@ export function ContactPageClient() {
                   {[
                     { icon: Mail, label: "info@raabyt.com", href: "mailto:info@raabyt.com" },
                     { icon: Phone, label: "+1 (555) 987-6543", href: "tel:+15559876543" },
-                    { icon: MapPin, label: "San Francisco, CA", href: undefined },
+                    { icon: MapPin, label: "Dubai, United Arab Emirates", href: undefined },
                   ].map((item) => {
                     const Icon = item.icon;
                     return (
@@ -353,6 +369,8 @@ export function ContactPageClient() {
                 <div className="flex gap-3">
                   {[
                     { label: "LinkedIn", href: "https://linkedin.com/company/raabyt", icon: LinkedInIcon },
+                    { label: "Instagram", href: "https://instagram.com/raabyt_", icon: InstagramIcon },
+                    { label: "Facebook", href: "https://facebook.com/raabytt", icon: FacebookIcon },
                     { label: "X", href: "https://x.com/raabyt", icon: XIcon },
                   ].map((s) => {
                     const Icon = s.icon;
@@ -378,7 +396,7 @@ export function ContactPageClient() {
               </div>
 
               {/* Map placeholder */}
-              <div
+              {/* <div
                 className={cn(
                   "rounded-xl aspect-[4/3] overflow-hidden",
                   "bg-white/5 border border-white/10",
@@ -389,7 +407,7 @@ export function ContactPageClient() {
                   <MapPin className="mx-auto h-8 w-8 text-brand-purple/30 mb-2" />
                   <p className="text-xs text-muted/50">Map placeholder</p>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </motion.div>
         </div>
