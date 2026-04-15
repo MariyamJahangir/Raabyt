@@ -107,6 +107,8 @@ export function StanceSection() {
           containerClassName="my-0"
           textClassName="text-2xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug sm:leading-relaxed md:leading-[1.7] text-center text-white/85 font-normal"
           highlightWord={highlightWord}
+          wordAnimationEnd="bottom center"
+          rotationEnd="bottom center"
         >
           {FULL_TEXT}
         </ScrollReveal>
