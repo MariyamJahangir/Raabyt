@@ -142,7 +142,7 @@ export function ProductsShowcase() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-18 md:py-28">
+    <section ref={sectionRef} className="relative py-18 md:py-28 overflow-hidden">
       {/* ─── Scroll-linked glowing orb ─── */}
       <div
         ref={glowRef}
@@ -194,8 +194,23 @@ export function ProductsShowcase() {
           </motion.p>
         </div>
 
-        {/* ─── BounceCards ─── */}
-        <div ref={cardsParallax} className="flex justify-center">
+        {/* ─── Mobile: responsive grid (the fan layout below requires desktop width) ─── */}
+        <div ref={cardsParallax} className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {PRODUCTS.map((product) => (
+            <div
+              key={product.slug}
+              className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/50 aspect-[3/4] w-full max-w-[280px] mx-auto"
+              style={{
+                background: "linear-gradient(160deg, rgba(25,25,40,0.95) 0%, rgba(10,10,18,0.98) 100%)",
+              }}
+            >
+              <GlowCard product={product} />
+            </div>
+          ))}
+        </div>
+
+        {/* ─── Desktop: BounceCards fan layout ─── */}
+        <div className="hidden md:flex justify-center">
           <BounceCards
             containerWidth="100%"
             containerHeight={420}
