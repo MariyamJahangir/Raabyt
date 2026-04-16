@@ -589,7 +589,7 @@ export function AboutPageClient() {
       <ValuesSection />
       <Divider />
       {/* <TeamSection /> */}
-      <GlobalPresence />
+      {/* <GlobalPresence /> */}
       {/* <CareersCTA /> */}
     </>
   );

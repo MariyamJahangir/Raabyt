@@ -34,9 +34,9 @@ export default function Home() {
       <section id="why-raabyt" className="min-h-screen relative flex flex-col justify-center">
         <WhyRaabyt />
       </section>
-      <section id="stats" className="relative flex flex-col justify-center">
+      {/* <section id="stats" className="relative flex flex-col justify-center">
         <StatsCounter />
-      </section>
+      </section> */}
       <section id="testimonials" className="min-h-screen relative flex flex-col justify-center">
         <Testimonials />
       </section>

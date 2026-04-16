@@ -16,8 +16,8 @@ const CERTIFICATIONS = [
 ];
 
 const RATINGS = [
-  { count: 5, score: "4.8/5", platform: "G2" },
-  { count: 5, score: "4.7/5", platform: "Capterra" },
+  { count: 5, score: "4.8/5", platform: "ERP" },
+  { count: 5, score: "4.7/5", platform: "CRM" },
 ];
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;

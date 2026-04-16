@@ -42,9 +42,9 @@ export function ChallengeSection() {
 
       {/* ─── Two-column: Text + Businessman ─── */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-center">
           {/* ─── Left: Text Content ─── */}
-          <div ref={textParallax}>
+          <div ref={textParallax} className="col-span-1 md:col-span-1 lg:col-span-2">
             <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-brand-purple mb-6">
               The Challenge
             </p>
@@ -55,8 +55,8 @@ export function ChallengeSection() {
               enableBlur
               baseRotation={3}
               blurStrength={4}
-              wordAnimationEnd="bottom center"
-              rotationEnd="bottom center"
+              wordAnimationEnd="bottom bottom-=20%"
+              rotationEnd="bottom bottom-=20%"
             >
               You&apos;ve Built Something Remarkable. Don&apos;t Let a Data Breach Define It.
             </ScrollReveal>
